@@ -1,3 +1,10 @@
 # Project_race_game
 
-Ein Rennspiel programmiert, mittels 3D Webgl 
+Ein Rennspiel programmiert, 
+
+
+#Programmiersprache
+- Typescript
+- Javascript
+- HTML, CSS
+- 3D Webgl 
