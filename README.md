@@ -4,5 +4,5 @@ Ein Autorennspiel, programmiert in der Schule mittels 3d WebGl. Funktion des Spi
 
 # Programmiersprache
 - Typescript
-- Javascript, schnittstelle 3D WebGl TRHEE.JS
+- Javascript, schnittstelle 3D WebGl THREE.JS
 - HTML, CSS
