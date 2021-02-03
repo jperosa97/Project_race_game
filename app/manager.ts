@@ -1,3 +1,5 @@
+/// <reference path="../typings/node_modules/@types/jquery/index.d.ts" />
+
 namespace RacingGame {
   export class Manager {
       engine: Engine;
@@ -32,21 +34,25 @@ namespace RacingGame {
             case "w":
             case "ArrowUp":
             console.log("Speed Up");
+            this.player.speedChanges = 8;
             break;
 
             case "s":
             case "ArrowDown":
             console.log("Speed down");
+            this.player.speedChanges = -20;
             break;
 
             case "a":
             case "ArrowLeft":
             console.log("jump to left");
+            this.player.switchLeftRight(-1);
             break;
               
             case "d":
             case "ArrowRight":
             console.log("jump to Right");
+            this.player.switchLeftRight(1);
             break;
             
             case "r":
@@ -58,6 +64,22 @@ namespace RacingGame {
               console.log("start game");
               break;
           
+          }
+        })
+        window.addEventListener("keyup", event => {
+          switch (event.key) {
+            
+            case "w":
+            case "ArrowUp":
+            console.log("Speed Up");
+            this.player.speedChanges = -5;
+            break;
+
+            case "s":
+            case "ArrowDown":
+            console.log("Speed down");
+            this.player.speedChanges = -5;
+            break; 
           }
         })
       }
